@@ -3,7 +3,7 @@
     app.use(express.json())
     app.listen(9000, () => console.log("OK"));
 
-    const mysql = require('mysql/promise')
+    const mysql = require('mysql2/promise')
     const connection = mysql.createPool({
         host: 'localhost',
         port: 3306,
